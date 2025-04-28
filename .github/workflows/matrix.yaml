@@ -8,6 +8,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+        TEST_ENV: assi-created-a-pipeline
     strategy:
       matrix:
         python: [3.9, 3.12, 3.11]
@@ -15,6 +17,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: show variable
+        run: echo "I created a test_variable=${{ env.TEST_ENV }}"
       - name: Setup Python
         uses: actions/setup-python@v3
         with:
