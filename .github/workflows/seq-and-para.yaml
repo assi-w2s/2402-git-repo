@@ -34,7 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Linter
-        run: echo "Running linter..."
+        run: echo "Running lint
+        er..."
 
   deploy:
     needs:
