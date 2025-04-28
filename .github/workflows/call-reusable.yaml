@@ -7,6 +7,6 @@ on:
 
 jobs:
   use-reusable:
-    uses: assi-w2s/2402-git-repo/.github/workflows/reusable-test.yaml@master
+    uses: assi-w2s/2402-git-repo/.github/workflows/reusable-test.yaml@main
     with:
       cool_var: "amazing"
